@@ -1,0 +1,258 @@
+html,body{
+    padding:0;
+    margin:0;
+    font-family: Tahoma, Calibri, Verdana, Geneva, sans-serif;
+    background: #fff;
+}
+body{
+    background: #ffffff url(background.jpg) no-repeat;
+    background-position: center top;
+    min-height: 1024px;
+}
+ul,li{
+    padding:0;
+    margin:0;
+}
+ul{
+    list-style-type: none;
+}
+h1{
+    color: #3498db;
+}
+a{
+    text-decoration: none;
+}
+.content{
+    width:1024px;
+    background: rgb(234, 234, 234);
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    box-shadow: inset 1px 1px 2px rgba(99, 94, 94, 0.25), inset 0 0 10px rgba(0,0,0,.10), 1px 1px 0 rgba(54,45,40,.25);
+}
+.menu{
+    width:1024px;
+    background: rgb(234, 234, 234);
+    margin: auto;
+    box-shadow: inset 1px 1px 2px rgba(99, 94, 94, 0.25), inset 0 0 10px rgba(0,0,0,.10), 1px 1px 0 rgba(54,45,40,.25);
+}
+.menu .logo{
+    display:block;
+    font-size:32px;
+    text-transform: uppercase;
+    color: #3498db;;
+    padding:15px;
+    font-weight: bold;
+    text-align:center;
+}
+
+.result{
+    display: none;
+    width: 100%;
+    text-align: center;
+}
+.form{
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+input[type=text]{
+    font-size: 14px;
+    text-shadow: 0 0 5px rgba(0,0,0,.15), 1px 0px 1px rgba(0,0,0,.25);
+    color: #8d7a5e;
+    border: none;
+    width: 300px;
+    height: 32px;
+    padding: 15px;
+    background: rgba(239, 236, 235, 0.8);
+    box-shadow: inset 1px 1px 2px rgba(0,0,0,.25), inset 0 0 10px rgba(0,0,0,.10), 1px 1px 0 rgba(54,45,40,.25);
+    transition: all 300ms;
+    -moz-transition: all 300ms;
+    -webkit-transition: all 300ms;
+    -o-transition: all 300ms;
+
+}
+form{
+    display: inline-block;
+    vertical-align: top;
+}
+textarea{
+    resize: none !important;
+    display: inline-block;
+    width: 90%;
+    margin: auto;
+    font-size: 14px;
+    text-shadow: 0 0 5px rgba(0,0,0,.15), 1px 0px 1px rgba(0,0,0,.25);
+    color: #000;
+    border: none;
+    margin-top: 25px;
+    height: 150px;
+    padding: 15px;
+    background: rgba(239, 236, 235, 0.8);
+    box-shadow: inset 1px 1px 2px rgba(99, 94, 94, 0.25), inset 0 0 10px rgba(0,0,0,.10), 1px 1px 0 rgba(54,45,40,.25);
+    transition: all 300ms;
+    -moz-transition: all 300ms;
+    -webkit-transition: all 300ms;
+    -o-transition: all 300ms;
+    text-align: left;
+}
+
+textarea {
+    font-family: monospace;
+    border-color: rgb(169, 169, 169);
+
+}
+*:focus {
+    outline: none;
+}
+.generate{
+    display: inline-block;
+    vertical-align: top;
+    font-weight: normal;
+    text-align: center;
+    vertical-align: top;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    white-space: nowrap;
+    padding: 20px 45px;
+    font-size: 12px;
+    line-height: 1.7;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    text-transform: uppercase;
+    -webkit-transition: all .1s linear;
+    -o-transition: all .1s linear;
+    transition: all .1s linear;
+    color: #f9f6f0 !important;
+    background: #3498db;
+    text-shadow: 0 0 5px rgba(13,13,12,0.25), 1px 1px 1px rgba(0,0,0,0.45);
+    -webkit-box-shadow: 0 1px 3px 0 rgba(0,0,0,0.18), 0 1px 0 0 rgba(255,255,255,0.05) inset;
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,0.18), 0 1px 0 0 rgba(255,255,255,0.05) inset;
+}
+.generate:hover{
+    background: #2196F3;
+
+}
+.item{
+    display: inline-block;
+    width: 90%;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: left;
+}
+.loader {
+    display: inline-block;
+    margin-top: 30px;
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #3498db;
+    width: 120px;
+    height: 120px;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+.footer{
+    color: #607d8b;
+    border-top: 1px solid #d6d8c6;
+    margin-top: 50px;
+    padding: 32px;
+    text-align: center;
+    font-size: 12px;
+}
+.footer a{
+    color: #3498db;
+}
+.name{
+    font-size:24px;
+    display:inline-block;
+    vertical-align: top;
+    margin-left: 25px;
+    padding-top: 10px;
+}
+.icon{
+    display:inline-block;
+    vertical-align: top;
+    border-radius: 5px;
+    box-shadow: inset 0 0 0 1px #74634d, inset 0 0 6px 3px rgba(0,0,0,.7), 0 0 5px rgba(0,0,0,.8), 0 1px 1px rgba(0,0,0,.5);
+    overflow: hidden;
+}
+.level{
+    color: #DAA520;
+    display: block;
+    margin-left: 84px;
+}
+.left-padded{
+    color: #000;
+    display: block;
+    margin-left: 84px;
+    margin-bottom: 5px;
+}
+.tos{
+    display: inline-block;
+    vertical-align: top;
+    font-weight: normal;
+    text-align: center;
+    vertical-align: top;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    white-space: nowrap;
+    padding: 20px 45px;
+    font-size: 12px;
+    line-height: 1.7;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    text-transform: uppercase;
+    -webkit-transition: all .1s linear;
+    -o-transition: all .1s linear;
+    transition: all .1s linear;
+    color: #f9f6f0 !important;
+    background: #42ad05;
+    text-shadow: 0 0 5px rgba(13,13,12,0.25), 1px 1px 1px rgba(0,0,0,0.45);
+    -webkit-box-shadow: 0 1px 3px 0 rgba(0,0,0,0.18), 0 1px 0 0 rgba(255,255,255,0.05) inset;
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,0.18), 0 1px 0 0 rgba(255,255,255,0.05) inset;
+}
+.tos:hover{
+    background: #42ad05;
+
+}
+.error{
+    display: block;
+    background: #98170e;
+    color: #f31b10;
+    padding:15px;
+    margin-top:25px;
+}
+.tos-body{
+    padding:25px;
+}
+.title{
+    font-size: 24px;
+    padding-bottom: 5px;
+    border-bottom: 1px dashed #C5C5C5;
+    color: #2D82C5;
+}
+.tos-body .paragraph{
+    background: rgba(22, 29, 33, 0.06);
+    padding: 30px;
+    margin-top: 35px;
+    text-align: left;
+}
